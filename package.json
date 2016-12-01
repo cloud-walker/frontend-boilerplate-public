@@ -1,3 +1,13 @@
 {
-  "private": true
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
+  }
 }
