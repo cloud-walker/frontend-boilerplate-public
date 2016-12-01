@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "test": "eslint source/**/*.js",
     "build": "webpack",
     "start": "webpack-dev-server"
   },
