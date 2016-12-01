@@ -1,1 +1,1 @@
-console.log('Browser JS is working')
+console.info('Browser JS is working')
