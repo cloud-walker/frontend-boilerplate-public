@@ -12,4 +12,16 @@ export default {
     port: 4000,
     contentBase: sourcePath,
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        options: {
+          presets: ['latest', 'react'],
+        },
+      },
+    ],
+  },
 }
