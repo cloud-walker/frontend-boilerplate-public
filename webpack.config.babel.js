@@ -11,6 +11,7 @@ export default {
   devServer: {
     port: 4000,
     contentBase: sourcePath,
+    historyApiFallback: true,
   },
   module: {
     rules: [
