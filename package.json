@@ -15,6 +15,7 @@
     "eslint-plugin-react": "^6.7.1",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-router": "next",
     "webpack": "beta",
     "webpack-dev-server": "beta"
   }
