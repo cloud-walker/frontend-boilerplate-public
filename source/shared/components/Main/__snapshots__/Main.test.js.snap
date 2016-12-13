@@ -1,0 +1,14 @@
+exports[`test <Main/> 1`] = `
+<div>
+  <Match
+    component={[Function]}
+    exactly={true}
+    pattern="/" />
+  <Match
+    component={[Function]}
+    exactly={false}
+    pattern="/styleguide" />
+  <Miss
+    component={[Function]} />
+</div>
+`;

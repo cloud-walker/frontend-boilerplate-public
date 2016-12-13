@@ -1,19 +1,37 @@
 {
   "scripts": {
-    "test": "eslint source/**/*.js",
+    "eslint": "eslint source/**/*.js",
+    "test:coverage": "jest --coverage",
+    "test:snapshots": "jest -u",
+    "test": "jest",
     "build": "webpack",
     "start": "webpack-dev-server"
   },
   "private": true,
+  "jest": {
+    "snapshotSerializers": [
+      "node_modules/enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "source/shared/components/**/*.js"
+    ],
+    "modulePaths": [
+      "source"
+    ]
+  },
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.8",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "enzyme": "^2.6.0",
+    "enzyme-to-json": "^1.4.4",
     "eslint": "^3.11.1",
     "eslint-plugin-react": "^6.7.1",
+    "jest": "^17.0.3",
     "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "next",
     "recompose": "^0.20.2",

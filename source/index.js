@@ -3,11 +3,16 @@ import {render} from 'react-dom'
 import {BrowserRouter} from 'react-router'
 import Main from 'shared/components/Main'
 
+/**
+ * Browser environment things (do not move from here):
+ * - BrowserRouter
+ */
+
 const content = (
   <BrowserRouter>
     <Main/>
   </BrowserRouter>
 )
-const root = document.getElementById('root')
+const hook = document.getElementById('root')
 
-render(content, root)
+render(content, hook)

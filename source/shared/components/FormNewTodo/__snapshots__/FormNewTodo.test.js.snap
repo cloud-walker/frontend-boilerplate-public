@@ -1,0 +1,7 @@
+exports[`test it should render properly 1`] = `
+<FormNewTodo
+  handleChange={[Function]}
+  handleSubmit={[Function]}
+  setValue={[Function]}
+  value="" />
+`;
