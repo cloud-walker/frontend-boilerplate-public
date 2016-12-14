@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react'
 import {compose, withState, withProps} from 'recompose'
 import FormNewTodo from 'shared/components/FormNewTodo'
+import TodoList from 'shared/components/TodoList'
 
 const enhance = compose(
   withState('todos', 'updateTodos', ['foo', 'bar']),
@@ -11,10 +12,7 @@ const enhance = compose(
 
 const Component = ({todos, addTodo}) =>
   <main>
-    {todos.map((item, i) =>
-      <div key={i}>{item}</div>
-    )}
-
+    <TodoList todos={todos}/>
     <FormNewTodo addTodo={addTodo}/>
   </main>
 
