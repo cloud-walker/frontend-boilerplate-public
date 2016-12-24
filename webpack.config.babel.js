@@ -28,4 +28,7 @@ export default {
   resolve: {
     modules: ['node_modules', sourcePath],
   },
+  performance: {
+    hints: process.env.NODE_ENV == 'production' && 'warning',
+  },
 }
