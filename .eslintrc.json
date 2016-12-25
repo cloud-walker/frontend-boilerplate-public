@@ -16,6 +16,7 @@
     "key-spacing": 1,
     "jsx-quotes": 1,
     "no-console": ["warn", {"allow": ["info", "warn", "error"]}],
+    "no-unused-vars": ["warn"],
     "react/prop-types": [1]
   }
 }
