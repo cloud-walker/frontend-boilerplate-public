@@ -28,7 +28,7 @@ export default {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         options: {
-          presets: ['latest', 'react'],
+          presets: ['latest', 'stage-2', 'react'],
         },
       },
     ],
