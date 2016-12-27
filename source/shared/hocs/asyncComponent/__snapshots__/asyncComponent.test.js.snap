@@ -1,9 +1,27 @@
-exports[`test asyncComponent 1`] = `null`;
+exports[`test asyncComponent 1`] = `<AsyncComponent />`;
 
-exports[`test asyncComponent 2`] = `null`;
+exports[`test asyncComponent 2`] = `
+<AsyncComponent>
+  <Component>
+    <div>
+      foo
+    </div>
+  </Component>
+</AsyncComponent>
+`;
 
 exports[`test asyncComponent 3`] = `
-<Component
+<AsyncComponent
   baz="taz"
-  foo="bar" />
+  foo="bar">
+  <Component
+    baz="taz"
+    foo="bar">
+    <div
+      baz="taz"
+      foo="bar">
+      foo
+    </div>
+  </Component>
+</AsyncComponent>
 `;

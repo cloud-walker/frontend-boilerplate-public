@@ -1,5 +1,5 @@
 import React from 'react'
-import {shallow} from 'enzyme'
+import {mount} from 'enzyme'
 import asyncComponent from './index'
 
 test('asyncComponent', async () => {
@@ -9,7 +9,7 @@ test('asyncComponent', async () => {
     }, 50)
   })
   const AsyncComponent = asyncComponent(lazyComponent)
-  const subject = shallow(<AsyncComponent/>)
+  const subject = mount(<AsyncComponent/>)
 
   /**
    * At first the component should render nothing as the promise is not
