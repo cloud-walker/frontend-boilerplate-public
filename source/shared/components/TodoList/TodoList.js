@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react'
 
-const Component = ({todos}) =>
+const Component = ({todos}) => !!todos.length &&
   <ul>
     {todos.map((todo, i) =>
       <li key={i}>{todo}</li>

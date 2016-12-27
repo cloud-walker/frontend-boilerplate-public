@@ -1,4 +1,4 @@
-exports[`test <TodoList/> empty 1`] = `<ul />`;
+exports[`test <TodoList/> empty 1`] = `null`;
 
 exports[`test <TodoList/> with some todos 1`] = `
 <ul>
