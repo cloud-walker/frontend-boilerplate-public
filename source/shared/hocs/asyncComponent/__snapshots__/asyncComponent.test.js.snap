@@ -1,0 +1,9 @@
+exports[`test asyncComponent 1`] = `null`;
+
+exports[`test asyncComponent 2`] = `null`;
+
+exports[`test asyncComponent 3`] = `
+<Component
+  baz="taz"
+  foo="bar" />
+`;

@@ -8,12 +8,19 @@
     "start": "webpack-dev-server"
   },
   "private": true,
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-2",
+      "react"
+    ]
+  },
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
     "collectCoverageFrom": [
-      "source/shared/components/**/*.js"
+      "**/source/shared/*(components|hocs)/**/*.js"
     ],
     "modulePaths": [
       "source"
@@ -24,6 +31,7 @@
     "babel-eslint": "^7.1.1",
     "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.18.0",
