@@ -4,6 +4,7 @@
     "test:coverage": "jest --coverage",
     "test:dev": "jest --watch --coverage",
     "test": "jest",
+    "clean": "babel-node tools/scripts/clean.js",
     "build": "webpack",
     "start": "webpack-dev-server"
   },
@@ -27,6 +28,8 @@
     ]
   },
   "dependencies": {
+    "app-root-dir": "^1.0.2",
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^18.0.0",
