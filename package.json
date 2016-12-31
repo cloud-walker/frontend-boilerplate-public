@@ -4,9 +4,9 @@
     "test:coverage": "jest --coverage",
     "test:dev": "jest --watch --coverage",
     "test": "jest",
-    "clean": "babel-node tools/scripts/clean.js",
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "clean": "babel-node tools/scripts/clean",
+    "build": "babel-node tools/scripts/build",
+    "start": "webpack-dev-server --config tools/webpack/web.config.babel.js"
   },
   "private": true,
   "babel": {

@@ -1,7 +1,8 @@
 import {resolve} from 'path'
+import appRootDir from 'app-root-dir'
 import {optimize} from 'webpack'
 
-const sourcePath = resolve(__dirname, 'source')
+const sourcePath = resolve(appRootDir.get(), 'source')
 
 export default {
   entry: {
@@ -13,7 +14,7 @@ export default {
     ],
   },
   output: {
-    path: resolve(__dirname, 'dist'),
+    path: resolve(appRootDir.get(), 'dist'),
     filename: '[name].js',
   },
   devServer: {
