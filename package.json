@@ -43,12 +43,14 @@
     "eslint": "^3.12.2",
     "eslint-plugin-react": "^6.8.0",
     "jest": "^18.0.0",
+    "koa": "next",
     "react": "^15.4.1",
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "next",
     "recompose": "^0.21.0",
     "webpack": "beta",
-    "webpack-dev-server": "beta"
+    "webpack-dev-server": "beta",
+    "webpack-node-externals": "^1.5.4"
   }
 }
