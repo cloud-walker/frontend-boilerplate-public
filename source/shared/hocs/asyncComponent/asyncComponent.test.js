@@ -29,8 +29,8 @@ test('asyncComponent', async () => {
    * functionality.
    */
   subject.setProps({
-    foo: 'bar',
-    baz: 'taz',
+    className: 'foo',
+    style: {color: 'red'},
   })
   expect(subject).toMatchSnapshot()
 
