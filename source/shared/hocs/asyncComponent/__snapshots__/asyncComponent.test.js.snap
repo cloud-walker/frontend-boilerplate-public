@@ -12,14 +12,26 @@ exports[`test asyncComponent 2`] = `
 
 exports[`test asyncComponent 3`] = `
 <AsyncComponent
-  baz="taz"
-  foo="bar">
+  className="foo"
+  style={
+    Object {
+      "color": "red",
+    }
+  }>
   <Component
-    baz="taz"
-    foo="bar">
+    className="foo"
+    style={
+      Object {
+        "color": "red",
+      }
+    }>
     <div
-      baz="taz"
-      foo="bar">
+      className="foo"
+      style={
+        Object {
+          "color": "red",
+        }
+      }>
       foo
     </div>
   </Component>
