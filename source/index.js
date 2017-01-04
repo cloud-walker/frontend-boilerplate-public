@@ -13,6 +13,6 @@ const content = (
     <Main/>
   </BrowserRouter>
 )
-const hook = document.getElementById('root')
+const hook = document.getElementById('hook')
 
 render(content, hook)
